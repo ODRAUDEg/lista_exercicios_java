@@ -1,10 +1,14 @@
 <script> 
-//Declaração: Uma fruteira oferece um desconto para a compra de maçãs de uma dúzia. Escreva um programa que calcule o valor total a ser pago por um cliente, considerando a quantidade de maçãs compradas e o preço unitário de acordo com a quantidade.
-
+//As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o valor total da compra. 
 //entrada
-
+let macas_compradas = prompt ("quantas macas foram compradas")
 //processamento
-
+if (macas_compradas>12){
+    valor = 0.25
+} else {
+    valor = 0.30
+}
+let valor_total = valor*macas_compradas
 //saida
-
+console.log ("o preco total da compra e de:"+ valor_total)
 </script>
