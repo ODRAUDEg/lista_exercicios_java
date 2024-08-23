@@ -1,17 +1,18 @@
 <script> 
-//Cálculo da média semestral e aprovação Declaração: Crie um programa que calcule a média semestral de um aluno com base em duas notas. Se a média for 6,0 ou superior, exiba uma mensagem de aprovação.
+//Declaração: Escreva um programa que leia um número e diga se ele é positivo ou negativo. Considere que o número zero é positivo.
 //entrada
-let nota_semestre1 = parseFloat(prompt ("qual a nota do primeiro semestre"))
-let nota_semestre2 = parseFloat(prompt ("qual a nota do segundo semestre"))
+let valor = prompt ("qual é o valor?")
 //processamento
-let media = (nota_semestre1+nota_semestre2)/2
-if (media >=6.0) {
-    resposta = "aprovado"
-}else {
-    resposta = "reprovado"
+let resposta
+if (valor >=0) {
+    resposta = "positivo"
+} else { 
+    resposta = "negativo"
+}
+if (valor ==0) {
+    resposta = "zero"
 }
 //saida
-console.log (resposta)
-
+console.log(resposta)
 
 </script>
