@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script>
+//1) Escreva um programa para ler o raio de um círculo, calcular e escrever a sua área (Pi * (raio * raio)) 
+//entrada
+let raio = prompt("qual o raio")
+//processamento
+//let area = PI * (raio * raio)
+function calcularAreaCirculo(valorRaio){
+    const PI = 3.14
+    return PI * (valorRaio * valorRaio)
+}
+let area = calcularAreaCirculo(raio)
+//saida
+console.log("area do circulo:" + area)
+console.log("area do circulo x2:" + calcularAreaCirculo(raio*2))
+console.log("area do circulo com raio 1000:" + calcularAreaCirculo(1000))
+</script>
