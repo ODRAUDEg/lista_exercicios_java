@@ -1,0 +1,13 @@
+<script> 
+// Escreva um programa para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius. (C = (F-32) * 5 / 9) 
+//entrada
+let temperaturaF = prompt("qual a temperatura fahrenheit")
+//processamento
+//let temperaturaC = (temperaturaF-32) * 5 / 9
+function CalcularTempFahrenheit(valorTempF){
+    return (valorTempF-32) * 5 / 9
+}
+let temperaturaC = CalcularTempFahrenheit(temperaturaF)
+//saida
+console.log("valor dos celsius: " + temperaturaC)
+</script>
