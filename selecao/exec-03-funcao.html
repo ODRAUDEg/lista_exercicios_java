@@ -6,17 +6,21 @@ let nota_semestre2 = parseFloat(prompt ("qual a nota do segundo semestre"))
 //processamento
 //let media = (nota_semestre1+nota_semestre2)/2
 //if (media >=6.0) {__resposta = "aprovado"__}else {__resposta = "reprovado"__}
-
-let media = (nota_semestre1+nota_semestre2)/2
-
-if (media >=6.0) {
-    resposta = "aprovado"
-}else {
-    resposta = "reprovado"
+function calcularMedia(valorNota1, valorNota2){
+    return (valorNota1+valorNota2)/2
 }
+function mostarResultado(valorResultado){
+    if (valorResultado >=6.0) {
+       resposta = "aprovado"
+    }else {
+        resposta = "reprovado"
+    } 
+    return resposta
+}
+let media = calcularMedia(nota_semestre1, nota_semestre2)
+let resultado = mostarResultado(media)
 //saida
 console.log (media)
-console.log (resposta)
-
+console.log (resultado)
 
 </script>
