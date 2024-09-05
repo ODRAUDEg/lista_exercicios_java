@@ -1,14 +1,26 @@
 <script> 
 //Construa um algoritmo que leia 50 valores inteiros e positivos e: · Encontre o maior valor · Encontre o menor valor · Calcule a média dos números lidos
 //entrada
+let maior =0
+let menor =999999
+let media =0
+let soma =0
 //processamento
-let resposta = ''
-for(let numero = prompt("qual o valor"); numero<=50; numero++ ){
-    resposta = numero
+for(let indexValor = 1; indexValor<=50; indexValor++){
+    let valor = parseInt(prompt(`digite o ${indexValor}º?`))
+    //document.write('${indexValor}º valor: ${valor} <br>')
+    if(valor>maior){
+        maior = valor
+    }
     
+    if(valor<menor){
+        menor = valor
+    }
+    soma += valor
 }
-let media
+media = soma/5
 //saida
-console.log(resposta)
-
+document.write(`Maior: ${maior}`)
+document.write(`menor: ${menor}`)
+document.write(`Media: ${media}`)
 </script>
