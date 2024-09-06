@@ -5,9 +5,10 @@ let maior =0
 let menor =999999
 let media =0
 let soma =0
+let listaValor = []
 //processamento
 for(let indexValor = 1; indexValor<=50; indexValor++){
-    let valor = parseInt(prompt(`digite o ${indexValor}º?`))
+    let valor = parseInt(prompt(`digite o ${indexValor}º valor ?`))
     //document.write('${indexValor}º valor: ${valor} <br>')
     if(valor>maior){
         maior = valor
@@ -17,10 +18,12 @@ for(let indexValor = 1; indexValor<=50; indexValor++){
         menor = valor
     }
     soma += valor
+    listaValor[indexValor - 1] = valor
 }
 media = soma/50
 //saida
-document.write(`Maior: ${maior}`)
-document.write(`menor: ${menor}`)
-document.write(`Media: ${media}`)
+document.write(`Maior: ${maior}<br>`)
+document.write(`menor: ${menor}<br>`)
+document.write(`Media: ${media}<br>`)
+document.write(`lista: ${listaValor} <br>`)
 </script>

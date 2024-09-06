@@ -1,0 +1,37 @@
+<script> 
+//Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de 50 pessoas. Fazer um algoritmo que calcule e escreva: • A maior e a menor altura do grupo; • A média de altura das mulheres; • O número de homens.
+
+//entrada
+let maiorAltura = 0
+let menorAltura = 999999999
+let sexo = ''
+//let alturaMediaFem = 0
+let QTDhomens = 0
+let alturaFem = 0
+//procssamento
+for(pessoas = 1 ;pessoas <=50 ;pessoas++){
+    let alturas = parseFloat(prompt(`qual a altura da ${pessoas}º pessoa`))
+    let sexo = prompt(`qual e o sexo da ${pessoas}º pessoa(F=femenino/M=masculino) `)
+    
+    if(alturas>maiorAltura){
+        maiorAltura = alturas
+    }
+    
+    if(alturas<menorAltura){
+        menorAltura = alturas
+    }
+    if(sexo=="M" || sexo =="m"){
+        QTDhomens++ 
+    }else{
+        alturaFem += alturas
+    }
+}
+let totalHomens = QTDhomens
+let totalMulheres = QTDhomens - 50
+let alturaMediaFem =    alturaFem / totalMulheres
+//saida
+console.log(`numero de homens = ${totalHomens}`)
+console.log(`maior altura = ${maiorAltura}`)
+console.log(`menor altura = ${menorAltura}`)
+console.log(`media altura feminina = ${alturaMediaFem}`)
+</script>
